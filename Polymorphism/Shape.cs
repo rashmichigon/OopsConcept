@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OopsConcept.Abstraction;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,5 +10,10 @@ namespace OopsConcept.Polymorphism
     abstract class Shape
     {
         public abstract int area();
+
+        public static implicit operator Shape(Square v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
