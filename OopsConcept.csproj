@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Inheritance\NewFolder\**" />
+    <EmbeddedResource Remove="Inheritance\NewFolder\**" />
+    <None Remove="Inheritance\NewFolder\**" />
+  </ItemGroup>
+
 </Project>
